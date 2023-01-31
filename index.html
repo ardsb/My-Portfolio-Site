@@ -72,7 +72,7 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/IMG_5914.JPG)">
+  <div id="home_some" class="intro route bg-image" style="background-image: url(img/IMG_5914.JPG)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
@@ -449,7 +449,7 @@
                 <p>Jan 2021 to Oct 2021</p>
               </div>
               <div class="media-body">
-                <h4 style="width: 167px;">Theoretical and practical understanding in SQL  </h4>
+                <h4 style="width: 167px;">Fundamental understanding in SQL  </h4>
                 <p>Sololearn    <br />(Online)</p>
               </div>
             </div>
@@ -946,15 +946,6 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
-  mytabs
-  home
-
-  <script>
-  $("#home-tab").click(function(){
-    alert("test")
-  })
-</script>
-
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -971,6 +962,24 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+  	$("#home-tab").click(function(){
+  		$("#home").addClass("active")
+  		$("#home").addClass("show")
+
+  		$("#profile").removeClass("active")
+  		$("#profile").removeClass("show")
+  	})
+
+  	$("#profile-tab").click(function(){
+  		$("#home").removeClass("active")
+  		$("#home").removeClass("show")
+
+  		$("#profile").addClass("active")
+  		$("#profile").addClass("show")
+  	})
+  </script>
 
 </body>
 </html>
